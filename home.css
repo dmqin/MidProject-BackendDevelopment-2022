@@ -1,0 +1,19 @@
+body {
+	background-image: url("./img/bg.jpg");
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	flex-direction: column;
+}
+
+.container {
+    width: 50vw;
+    background-color: rgb(255, 255, 255);
+    border-radius: 1rem;
+    padding: 2rem;
+}
+.container h1{
+    text-align: center;
+    color: #000000;
+}

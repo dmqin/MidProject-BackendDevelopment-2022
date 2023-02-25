@@ -32,23 +32,27 @@
                <input type="text" 
                       name="uname" 
                       placeholder="Username"
-                      value="<?php echo $_GET['uname']; ?>"><br>
+                      value="<?php echo $_GET['uname']; ?>"
+                      pattern=".{3,}" title="Must contain at least 3 character"><br>
           <?php }else{ ?>
                <input type="text" 
                       name="uname" 
-                      placeholder="Username"><br>
+                      placeholder="Username"
+                      pattern=".{3,}" title="Must contain at least 3 character"><br>
           <?php }?>
 
 
      	<label>Password</label>
      	<input type="password" 
                  name="password" 
-                 placeholder="Password"><br>
+                 placeholder="Password"
+                 pattern=".{8,}" title="Must contain at least 8 character"><br>
 
           <label>Confirm Password</label>
           <input type="password" 
                  name="re_password" 
-                 placeholder="Confirm Password"><br>
+                 placeholder="Confirm Password"
+                 pattern=".{8,}" title="Must contain at least 8 character"><br>
 
      	<button type="submit">Sign Up</button>
           <a href="index.php" class="ca">Already have an account?</a>

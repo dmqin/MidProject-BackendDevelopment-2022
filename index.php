@@ -11,10 +11,10 @@
      		<p class="error"><?php echo $_GET['error']; ?></p>
      	<?php } ?>
      	<label>Username</label>
-     	<input type="text" name="uname" placeholder="User Name"><br>
+     	<input type="text" name="uname" placeholder="Username"><br>
 
      	<label>Password</label>
-     	<input type="password" name="password" placeholder="Password"><br>
+     	<input type="password" name="password" placeholder="Password" pattern=".{8,}" title="Must contain at least 8 character"><br>
 
      	<button type="submit">Login</button>
           <a href="signup.php" class="ca">Create an account</a>
